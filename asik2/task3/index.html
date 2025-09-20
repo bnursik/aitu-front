@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Grades & Feedback</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="shell">
+        <div class="site-title">Student Grades & Feedback</div>
+        <div class="site-sub">Tables • Forms • Simple CSS</div>
+      </div>
+      <div class="bubble b1"></div>
+      <div class="bubble b2"></div>
+      <div class="bubble b3"></div>
+    </div>
+
+    <div class="shell content">
+      <div class="card">
+        <h1 id="grades-title">Class Midterm Grades</h1>
+
+        <table class="grades">
+          <thead>
+            <tr>
+              <th colspan="3">Midterm Results</th>
+            </tr>
+            <tr>
+              <th>Name</th>
+              <th>Subject</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-row">
+              <td>Amina</td>
+              <td>Math</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>Erbol</td>
+              <td>Physics</td>
+              <td>B+</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Dana</td>
+              <td>Chemistry</td>
+              <td>A-</td>
+            </tr>
+            <tr>
+              <td>Biology</td>
+              <td>B</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card form-card">
+        <h2>Feedback Form</h2>
+        <form id="feedback-form" action="#" method="post">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="role">Role</label>
+            <select id="role">
+              <option>Student</option>
+              <option>Teacher</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <span class="label-inline">Was this helpful?</span>
+            <label class="radio-inline">
+              <input type="radio" name="helpful" value="yes" checked /> Yes
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="helpful" value="no" /> No
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label for="comments">Comments</label>
+            <textarea
+              id="comments"
+              rows="4"
+              placeholder="Your message..."
+            ></textarea>
+          </div>
+
+          <div class="form-row">
+            <button class="btn" type="submit">Submit Feedback</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">© 2025 Nursultan Beisenbek. All rights reserved.</div>
+  </body>
+</html>
