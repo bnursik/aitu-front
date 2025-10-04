@@ -1,0 +1,40 @@
+/* Mobile-first: stacked vertically (1 column) */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile: 1 per row */
+  gap: 12px;
+}
+
+.box {
+  padding: 20px;
+  background: #1f2937;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Tablet: 2 per row */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop: 3 per row */
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

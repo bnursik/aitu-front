@@ -1,0 +1,33 @@
+/* Default: Mobile (smallest) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
